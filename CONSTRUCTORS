@@ -1,0 +1,29 @@
+#Constructor is a special method that automatically called when an object of the class is created.
+
+#Program
+
+#include <iostream>
+using namespace std;
+
+class car { // Class
+   public:
+    string brand;   //Attributes
+    string model;
+    int year;
+    
+    car(string x ,string y ,int z) { //Constructor
+        brand=x;
+        model=y;
+        year=z;
+    }
+};
+
+int main(){
+    car Objt1("BMW","X5",1995);
+    car Objt2("Ford","Mustang",1965);
+    
+    //Print
+    cout<<Objt1.brand <<" "<< Objt1.model <<" "<<Objt1.year <<"\n";
+    cout<<Objt2.brand <<" "<< Objt2.model <<" "<<Objt2.year <<"\n";
+    return 0;
+}
